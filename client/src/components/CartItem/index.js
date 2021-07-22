@@ -1,10 +1,13 @@
-import React from 'react';
-import { useStoreContext } from "../../utils/GlobalState";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+//^^added these two lines to top of component js, elemenating the context imports
+// import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
-import { idbPromise } from "../../utils/helpers";
+import { idbPromise } from "../../utils/helpers"; //??? how do these fit in with Redux??
 
 const CartItem = ({ item }) => {
 
+  const
   const [, dispatch] = useStoreContext();
 
   const removeFromCart = item => {

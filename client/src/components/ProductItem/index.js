@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+//^^added these two lines to top of component js, elemenating the context imports
 import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
-import { useStoreContext } from "../../utils/GlobalState";
+import { pluralize } from "../../utils/helpers";
+// import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
