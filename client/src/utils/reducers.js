@@ -13,8 +13,7 @@ import {
 
 
 //do I need ({ value = [], ...props }) from StoreProvider??? in GlobalState
-const initialState = {
-  productStuff: [
+const initialState = 
     {
     products: [],
     cart: [],
@@ -22,8 +21,6 @@ const initialState = {
     categories: [],
     currentCategory: '',
   }
-]
-}
 
 // The reducer is a function that accepts the current state and an action. It returns a new state based on that action.
 export const reducer = (state = initialState, action) => {

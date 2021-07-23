@@ -15,7 +15,7 @@ function CategoryMenu() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 
-  // const { categories } = state; 
+  const { categories } = state; 
   //^^^??? Do I need this? Or const below?
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
