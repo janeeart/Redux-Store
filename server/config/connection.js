@@ -8,3 +8,5 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mernshopping', 
 });
 
 module.exports = mongoose.connection;
+
+//no changes needed, attempting push to deploy
