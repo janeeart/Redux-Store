@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ProductItem from '../ProductItem';
 // import { useStoreContext } from '../../utils/GlobalState';
@@ -9,7 +9,10 @@ import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
+  // const [state, dispatch] = useStoreContext();
+
+  const dispatch = useDispatch()
+  const state = useSelector((state) => state);
 
   const { currentCategory } = state;
 
