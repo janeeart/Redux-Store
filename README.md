@@ -25,7 +25,7 @@ The user will run ```npm run seed``` and ```npm run develop``` in the terminal t
 Janée Artis
 
 ## Deployed Application
- 
+https://powerful-savannah-17766.herokuapp.com/
   
 ## Questions? Contact Me:
 * GitHub: [GitHub Profile](https://github.com/janeeart)
